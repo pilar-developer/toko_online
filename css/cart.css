@@ -1,0 +1,97 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 1rem;
+}
+
+.btn-login {
+    margin-right: 10px;
+}
+
+.cart-table {
+    flex: 1;
+    margin-top: 50px;
+}
+
+.cart-table img {
+    width: 100px;
+    height: auto;
+}
+
+.cart-actions .btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer p {
+    margin: 0;
+    color: #f4f4f4;
+}
+
+.footer a {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}

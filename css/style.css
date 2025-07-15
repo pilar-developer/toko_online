@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding-top: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+}
+
+.btn-login {
+  margin-right: 10px;
+}
+
+.header {
+  position: relative;
+}
+
+.header .carousel-inner img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.header .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 10;
+  text-align: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.product-card h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-card .btn {
+  padding: 8px 15px;
+  font-size: 1rem;
+}
+
+.product-image {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card img {
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-scroll {
+  scroll-behavior: smooth;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+  width: 140px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #343a40;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: #f4f4f4;
+}
+
+.footer a {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
