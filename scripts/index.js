@@ -39,3 +39,27 @@
 
     setInterval(autoScrollCategory, 2000); // Ganti angka untuk kecepatan (2000ms = 2 detik)
   });
+
+function increaseQuantity(button) {
+  let input = button.parentElement.querySelector('input');
+  let currentValue = parseInt(input.value);
+  input.value = currentValue + 1;
+  updateTotalPrice(button);
+}
+
+function decreaseQuantity(button) {
+  let input = button.parentElement.querySelector('input');
+  let currentValue = parseInt(input.value);
+  if (currentValue > 1) {
+    input.value = currentValue - 1;
+    updateTotalPrice(button);
+  }
+}
+
+function updateTotalPrice(button) {
+  let row = button.closest('tr');
+  let price = parseInt(row.querySelector('td:nth-child(2)').textContent.replace('Rp', '').replace(',', ''));
+  let quantity = parseInt(row.querySelector('input').value);
+  let totalPrice = row.querySelector('.total-price');
+  totalPrice.textContent = 'Rp' + (price * quantity).toLocaleString('id-ID');
+}
