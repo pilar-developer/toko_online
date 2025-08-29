@@ -126,6 +126,35 @@ main {
   transform: scale(1.05);
 }
 
+/* Contact */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.contact-item i {
+  font-size: 22px;
+  color: #6f42c1;
+  /* ungu elegan */
+  margin-right: 10px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #6f42c1;
+}
+
 .footer {
   background-color: #343a40;
   padding: 20px 0;
